@@ -1,0 +1,70 @@
+#CNBCCatalystCampaign_Root {
+  position: relative;
+  width: 100%;
+}
+@media (max-width: 760px) {
+  #CNBCCatalystCampaign_Root {
+  }
+}
+.placeholder_footer {
+  background-color: #005594;
+  height: 54px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+}
+.place_holder_header {
+  background-color: #005594;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  height: 70px;
+  top: 0;
+}
+.place_holder_header.redux {
+  height: 50px;
+}
+@media (max-width: 767px) {
+  .place_holder_header.redux {
+    height: 45px;
+  }
+}
+.place_holder_header img {
+  width: 150px;
+}
+.place_holder_header_container {
+  width: 1290px;
+  text-align: left;
+  margin: 0 auto;
+}
+@media (max-width: 720px) {
+  .place_holder_header {
+    height: 45px;
+  }
+}
+
+#paid_by {
+  position: fixed;
+  z-index: 999;
+}
+
+.placeholder_page_footer {
+  width: 100%;
+  min-height: 400px;
+  background-color: #071d39;
+  color: white;
+  padding: 2rem;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.placeholder_page_footer hr {
+  width: 100%;
+}
+.placeholder_page_footer img {
+  max-width: 120px;
+}
