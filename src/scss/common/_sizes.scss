@@ -1,0 +1,146 @@
+/// UI: Sizes ...
+
+// Font sizes
+.fsize {
+  // Copy
+  &-copy {
+    &-xs {
+      font-size: $font-copy-xs - 1;
+
+      @media screen and (min-width: $mobile-lg) {
+        font-size: $font-copy-xs;
+      }
+    }
+
+    &-sm {
+      font-size: $font-copy-sm - 1;
+
+      @media screen and (min-width: $mobile-lg) {
+        font-size: $font-copy-sm;
+      }
+    }
+
+    &-md {
+      font-size: $font-copy-md - 1;
+
+      @media screen and (min-width: $mobile-lg) {
+        font-size: $font-copy-md;
+      }
+    }
+
+    &-lg {
+      font-size: $font-copy-lg - 2;
+
+      @media screen and (min-width: $mobile-lg) {
+        font-size: $font-copy-lg - 1;
+      }
+
+      @media screen and (min-width: $tablet-lg) {
+        font-size: $font-copy-lg;
+      }
+    }
+
+    &-xlg {
+      font-size: $font-copy-xlg - 2;
+
+      @media screen and (min-width: $mobile-lg) {
+        font-size: $font-copy-xlg - 1;
+      }
+
+      @media screen and (min-width: $tablet-lg) {
+        font-size: $font-copy-xlg;
+      }
+    }
+  }
+
+  // Heading
+  &-heading {
+    &-xs {
+      font-size: $font-heading-xs * 0.7;
+
+      @media screen and (min-width: $mobile-lg) {
+        font-size: $font-heading-xs * 0.8;
+      }
+
+      @media screen and (min-width: $tablet-lg) {
+        font-size: $font-heading-xs * 0.9;
+      }
+
+      @media screen and (min-width: $laptop) {
+        font-size: $font-heading-xs;
+      }
+    }
+
+    &-sm {
+      font-size: $font-heading-sm * 0.7;
+
+      @media screen and (min-width: $mobile-lg) {
+        font-size: $font-heading-sm * 0.8;
+      }
+
+      @media screen and (min-width: $tablet-lg) {
+        font-size: $font-heading-sm * 0.9;
+      }
+
+      @media screen and (min-width: $laptop) {
+        font-size: $font-heading-sm;
+      }
+    }
+
+    &-md {
+      font-size: $font-heading-md * 0.7;
+
+      @media screen and (min-width: $mobile-lg) {
+        font-size: $font-heading-md * 0.8;
+      }
+
+      @media screen and (min-width: $tablet-lg) {
+        font-size: $font-heading-md * 0.9;
+      }
+
+      @media screen and (min-width: $laptop) {
+        font-size: $font-heading-md;
+      }
+    }
+
+    &-lg {
+      font-size: $font-heading-lg * 0.6;
+
+      @media screen and (min-width: $mobile-lg) {
+        font-size: $font-heading-lg * 0.7;
+      }
+
+      @media screen and (min-width: $tablet-lg) {
+        font-size: $font-heading-lg * 0.8;
+      }
+
+      @media screen and (min-width: $laptop) {
+        font-size: $font-heading-lg * 0.9;
+      }
+
+      @media screen and (min-width: $laptop-lg) {
+        font-size: $font-heading-lg;
+      }
+    }
+
+    &-xlg {
+      font-size: $font-heading-xlg * 0.6;
+
+      @media screen and (min-width: $mobile-lg) {
+        font-size: $font-heading-xlg * 0.7;
+      }
+
+      @media screen and (min-width: $tablet-lg) {
+        font-size: $font-heading-xlg * 0.8;
+      }
+
+      @media screen and (min-width: $laptop) {
+        font-size: $font-heading-xlg * 0.9;
+      }
+
+      @media screen and (min-width: $laptop-lg) {
+        font-size: $font-heading-xlg;
+      }
+    }
+  }
+}

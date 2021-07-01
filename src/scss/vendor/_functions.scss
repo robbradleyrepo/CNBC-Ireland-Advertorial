@@ -1,0 +1,21 @@
+/// Vendor: Functions ...
+
+// Retrieve element proportion based on container width (%)
+@function propW($layer, $container: 1920) {
+  @return ($layer/$container) * 100%;
+}
+
+// Retrieve element proportion based on container height (%)
+@function propH($layer, $container: 1080) {
+  @return ($layer/$container) * 100%;
+}
+
+// Retrieve element proportion based on container width (vw)
+@function propVW($layer, $container: 1920) {
+  @return ($layer/$container) * 100vw;
+}
+
+// Retrieve element proportion based on container height (vh)
+@function propVH($layer, $container: 1080) {
+  @return ($layer/$container) * 100vh;
+}

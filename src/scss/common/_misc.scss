@@ -1,0 +1,16 @@
+/// Common: Misc ...
+
+// Clearfix
+.clearfix {
+  &:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+// Font smoothing
+.fsmoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

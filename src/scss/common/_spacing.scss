@@ -1,0 +1,649 @@
+/// Common: Spacing ...
+
+// Padding
+.padding {
+  // Top
+  &-top {
+    &-xxs {
+      padding-top: $margin-xs / 2;
+
+      @media screen and (min-width: $mobile) {
+        padding-top: $margin-xxs;
+      }
+    }
+
+    &-xs {
+      padding-top: $margin-xxs;
+
+      @media screen and (min-width: $mobile) {
+        padding-top: $margin-xs;
+      }
+    }
+
+    &-sm {
+      padding-top: $margin-xs;
+
+      @media screen and (min-width: $mobile) {
+        padding-top: $margin-sm;
+      }
+    }
+
+    &-md {
+      padding-top: $margin-xs;
+
+      @media screen and (min-width: $mobile) {
+        padding-top: $margin-sm;
+      }
+
+      @media screen and (min-width: $tablet) {
+        padding-top: $margin-md;
+      }
+    }
+
+    &-lg {
+      padding-top: $margin-sm;
+
+      @media screen and (min-width: $mobile) {
+        padding-top: $margin-md;
+      }
+
+      @media screen and (min-width: $tablet) {
+        padding-top: $margin-lg;
+      }
+    }
+
+    &-xlg {
+      padding-top: $margin-md;
+
+      @media screen and (min-width: $mobile) {
+        padding-top: $margin-lg;
+      }
+
+      @media screen and (min-width: $tablet) {
+        padding-top: $margin-xlg;
+      }
+    }
+
+    &-xxlg {
+      padding-top: $margin-lg;
+
+      @media screen and (min-width: $mobile) {
+        padding-top: $margin-xlg;
+      }
+
+      @media screen and (min-width: $tablet) {
+        padding-top: $margin-xxlg;
+      }
+    }
+
+    &-ms {
+      padding-top: $margin-lg;
+
+      @media screen and (min-width: $mobile) {
+        padding-top: $margin-xlg;
+      }
+
+      @media screen and (min-width: $tablet) {
+        padding-top: $margin-xxlg;
+      }
+
+      @media screen and (min-width: $laptop) {
+        padding-top: $margin-ms;
+      }
+    }
+
+    &-xms {
+      padding-top: $margin-xlg;
+
+      @media screen and (min-width: $mobile) {
+        padding-top: $margin-xxlg;
+      }
+
+      @media screen and (min-width: $tablet) {
+        padding-top: $margin-ms;
+      }
+
+      @media screen and (min-width: $laptop) {
+        padding-top: $margin-xms;
+      }
+    }
+  }
+
+  // Bottom
+  &-bottom {
+    &-xxs {
+      padding-bottom: $margin-xs / 2;
+
+      @media screen and (min-width: $mobile) {
+        padding-bottom: $margin-xxs;
+      }
+    }
+
+    &-xs {
+      padding-bottom: $margin-xxs;
+
+      @media screen and (min-width: $mobile) {
+        padding-bottom: $margin-xs;
+      }
+    }
+
+    &-sm {
+      padding-bottom: $margin-xs;
+
+      @media screen and (min-width: $mobile) {
+        padding-bottom: $margin-sm;
+      }
+    }
+
+    &-md {
+      padding-bottom: $margin-xs;
+
+      @media screen and (min-width: $mobile) {
+        padding-bottom: $margin-sm;
+      }
+
+      @media screen and (min-width: $tablet) {
+        padding-bottom: $margin-md;
+      }
+    }
+
+    &-lg {
+      padding-bottom: $margin-sm;
+
+      @media screen and (min-width: $mobile) {
+        padding-bottom: $margin-md;
+      }
+
+      @media screen and (min-width: $tablet) {
+        padding-bottom: $margin-lg;
+      }
+    }
+
+    &-xlg {
+      padding-bottom: $margin-md;
+
+      @media screen and (min-width: $mobile) {
+        padding-bottom: $margin-lg;
+      }
+
+      @media screen and (min-width: $tablet) {
+        padding-bottom: $margin-xlg;
+      }
+    }
+
+    &-xxlg {
+      padding-bottom: $margin-lg;
+
+      @media screen and (min-width: $mobile) {
+        padding-bottom: $margin-xlg;
+      }
+
+      @media screen and (min-width: $tablet) {
+        padding-bottom: $margin-xxlg;
+      }
+    }
+
+    &-ms {
+      padding-bottom: $margin-lg;
+
+      @media screen and (min-width: $mobile) {
+        padding-bottom: $margin-xlg;
+      }
+
+      @media screen and (min-width: $tablet) {
+        padding-bottom: $margin-xxlg;
+      }
+
+      @media screen and (min-width: $laptop) {
+        padding-bottom: $margin-ms;
+      }
+    }
+
+    &-xms {
+      padding-bottom: $margin-xlg;
+
+      @media screen and (min-width: $mobile) {
+        padding-bottom: $margin-xxlg;
+      }
+
+      @media screen and (min-width: $tablet) {
+        padding-bottom: $margin-ms;
+      }
+
+      @media screen and (min-width: $laptop) {
+        padding-bottom: $margin-xms;
+      }
+    }
+  }
+
+  // Left
+  &-left {
+    &-xxs {
+      padding-left: $margin-xs / 2;
+
+      @media screen and (min-width: $mobile) {
+        padding-left: $margin-xxs;
+      }
+    }
+
+    &-xs {
+      padding-left: $margin-xxs;
+
+      @media screen and (min-width: $mobile) {
+        padding-left: $margin-xs;
+      }
+    }
+
+    &-sm {
+      padding-left: $margin-xs;
+
+      @media screen and (min-width: $mobile) {
+        padding-left: $margin-sm;
+      }
+    }
+
+    &-md {
+      padding-left: $margin-xs;
+
+      @media screen and (min-width: $mobile) {
+        padding-left: $margin-sm;
+      }
+
+      @media screen and (min-width: $tablet) {
+        padding-left: $margin-md;
+      }
+    }
+
+    &-lg {
+      padding-left: $margin-sm;
+
+      @media screen and (min-width: $mobile) {
+        padding-left: $margin-md;
+      }
+
+      @media screen and (min-width: $tablet) {
+        padding-left: $margin-lg;
+      }
+    }
+
+    &-xlg {
+      padding-left: $margin-md;
+
+      @media screen and (min-width: $mobile) {
+        padding-left: $margin-lg;
+      }
+
+      @media screen and (min-width: $tablet) {
+        padding-left: $margin-xlg;
+      }
+    }
+
+    &-xxlg {
+      padding-left: $margin-lg;
+
+      @media screen and (min-width: $mobile) {
+        padding-left: $margin-xlg;
+      }
+
+      @media screen and (min-width: $tablet) {
+        padding-left: $margin-xxlg;
+      }
+    }
+
+    &-ms {
+      padding-left: $margin-lg;
+
+      @media screen and (min-width: $mobile) {
+        padding-left: $margin-xlg;
+      }
+
+      @media screen and (min-width: $tablet) {
+        padding-left: $margin-xxlg;
+      }
+
+      @media screen and (min-width: $laptop) {
+        padding-left: $margin-ms;
+      }
+    }
+
+    &-xms {
+      padding-left: $margin-xlg;
+
+      @media screen and (min-width: $mobile) {
+        padding-left: $margin-xxlg;
+      }
+
+      @media screen and (min-width: $tablet) {
+        padding-left: $margin-ms;
+      }
+
+      @media screen and (min-width: $laptop) {
+        padding-left: $margin-xms;
+      }
+    }
+  }
+
+  // Right
+  &-right {
+    &-xxs {
+      padding-right: $margin-xs / 2;
+
+      @media screen and (min-width: $mobile) {
+        padding-right: $margin-xxs;
+      }
+    }
+
+    &-xs {
+      padding-right: $margin-xxs;
+
+      @media screen and (min-width: $mobile) {
+        padding-right: $margin-xs;
+      }
+    }
+
+    &-sm {
+      padding-right: $margin-xs;
+
+      @media screen and (min-width: $mobile) {
+        padding-right: $margin-sm;
+      }
+    }
+
+    &-md {
+      padding-right: $margin-xs;
+
+      @media screen and (min-width: $mobile) {
+        padding-right: $margin-sm;
+      }
+
+      @media screen and (min-width: $tablet) {
+        padding-right: $margin-md;
+      }
+    }
+
+    &-lg {
+      padding-right: $margin-sm;
+
+      @media screen and (min-width: $mobile) {
+        padding-right: $margin-md;
+      }
+
+      @media screen and (min-width: $tablet) {
+        padding-right: $margin-lg;
+      }
+    }
+
+    &-xlg {
+      padding-right: $margin-md;
+
+      @media screen and (min-width: $mobile) {
+        padding-right: $margin-lg;
+      }
+
+      @media screen and (min-width: $tablet) {
+        padding-right: $margin-xlg;
+      }
+    }
+
+    &-xxlg {
+      padding-right: $margin-lg;
+
+      @media screen and (min-width: $mobile) {
+        padding-right: $margin-xlg;
+      }
+
+      @media screen and (min-width: $tablet) {
+        padding-right: $margin-xxlg;
+      }
+    }
+
+    &-ms {
+      padding-right: $margin-lg;
+
+      @media screen and (min-width: $mobile) {
+        padding-right: $margin-xlg;
+      }
+
+      @media screen and (min-width: $tablet) {
+        padding-right: $margin-xxlg;
+      }
+
+      @media screen and (min-width: $laptop) {
+        padding-right: $margin-ms;
+      }
+    }
+
+    &-xms {
+      padding-right: $margin-xlg;
+
+      @media screen and (min-width: $mobile) {
+        padding-right: $margin-xxlg;
+      }
+
+      @media screen and (min-width: $tablet) {
+        padding-right: $margin-ms;
+      }
+
+      @media screen and (min-width: $laptop) {
+        padding-right: $margin-xms;
+      }
+    }
+  }
+}
+
+// Margin
+.margin {
+  // Top
+  &-top {
+    &-xxs {
+      margin-top: $margin-xs / 2;
+
+      @media screen and (min-width: $mobile) {
+        margin-top: $margin-xxs;
+      }
+    }
+
+    &-xs {
+      margin-top: $margin-xxs;
+
+      @media screen and (min-width: $mobile) {
+        margin-top: $margin-xs;
+      }
+    }
+
+    &-sm {
+      margin-top: $margin-xs;
+
+      @media screen and (min-width: $mobile) {
+        margin-top: $margin-sm;
+      }
+    }
+
+    &-md {
+      margin-top: $margin-xs;
+
+      @media screen and (min-width: $mobile) {
+        margin-top: $margin-sm;
+      }
+
+      @media screen and (min-width: $tablet) {
+        margin-top: $margin-md;
+      }
+    }
+
+    &-lg {
+      margin-top: $margin-sm;
+
+      @media screen and (min-width: $mobile) {
+        margin-top: $margin-md;
+      }
+
+      @media screen and (min-width: $tablet) {
+        margin-top: $margin-lg;
+      }
+    }
+
+    &-xlg {
+      margin-top: $margin-md;
+
+      @media screen and (min-width: $mobile) {
+        margin-top: $margin-lg;
+      }
+
+      @media screen and (min-width: $tablet) {
+        margin-top: $margin-xlg;
+      }
+    }
+
+    &-xxlg {
+      margin-top: $margin-lg;
+
+      @media screen and (min-width: $mobile) {
+        margin-top: $margin-xlg;
+      }
+
+      @media screen and (min-width: $tablet) {
+        margin-top: $margin-xxlg;
+      }
+    }
+
+    &-ms {
+      margin-top: $margin-lg;
+
+      @media screen and (min-width: $mobile) {
+        margin-top: $margin-xlg;
+      }
+
+      @media screen and (min-width: $tablet) {
+        margin-top: $margin-xxlg;
+      }
+
+      @media screen and (min-width: $laptop) {
+        margin-top: $margin-ms;
+      }
+    }
+
+    &-xms {
+      margin-top: $margin-xlg;
+
+      @media screen and (min-width: $mobile) {
+        margin-top: $margin-xxlg;
+      }
+
+      @media screen and (min-width: $tablet) {
+        margin-top: $margin-ms;
+      }
+
+      @media screen and (min-width: $laptop) {
+        margin-top: $margin-xms;
+      }
+    }
+  }
+
+  // Bottom
+  &-bottom {
+    &-xxs {
+      margin-bottom: $margin-xs / 2;
+
+      @media screen and (min-width: $mobile) {
+        margin-bottom: $margin-xxs;
+      }
+    }
+
+    &-xs {
+      margin-bottom: $margin-xxs;
+
+      @media screen and (min-width: $mobile) {
+        margin-bottom: $margin-xs;
+      }
+    }
+
+    &-sm {
+      margin-bottom: $margin-xs;
+
+      @media screen and (min-width: $mobile) {
+        margin-bottom: $margin-sm;
+      }
+    }
+
+    &-md {
+      margin-bottom: $margin-xs;
+
+      @media screen and (min-width: $mobile) {
+        margin-bottom: $margin-sm;
+      }
+
+      @media screen and (min-width: $tablet) {
+        margin-bottom: $margin-md;
+      }
+    }
+
+    &-lg {
+      margin-bottom: $margin-sm;
+
+      @media screen and (min-width: $mobile) {
+        margin-bottom: $margin-md;
+      }
+
+      @media screen and (min-width: $tablet) {
+        margin-bottom: $margin-lg;
+      }
+    }
+
+    &-xlg {
+      margin-bottom: $margin-md;
+
+      @media screen and (min-width: $mobile) {
+        margin-bottom: $margin-lg;
+      }
+
+      @media screen and (min-width: $tablet) {
+        margin-bottom: $margin-xlg;
+      }
+    }
+
+    &-xxlg {
+      margin-bottom: $margin-lg;
+
+      @media screen and (min-width: $mobile) {
+        margin-bottom: $margin-xlg;
+      }
+
+      @media screen and (min-width: $tablet) {
+        margin-bottom: $margin-xxlg;
+      }
+    }
+
+    &-ms {
+      margin-bottom: $margin-lg;
+
+      @media screen and (min-width: $mobile) {
+        margin-bottom: $margin-xlg;
+      }
+
+      @media screen and (min-width: $tablet) {
+        margin-bottom: $margin-xxlg;
+      }
+
+      @media screen and (min-width: $laptop) {
+        margin-bottom: $margin-ms;
+      }
+    }
+
+    &-xms {
+      margin-bottom: $margin-xlg;
+
+      @media screen and (min-width: $mobile) {
+        margin-bottom: $margin-xxlg;
+      }
+
+      @media screen and (min-width: $tablet) {
+        margin-bottom: $margin-ms;
+      }
+
+      @media screen and (min-width: $laptop) {
+        margin-bottom: $margin-xms;
+      }
+    }
+  }
+}

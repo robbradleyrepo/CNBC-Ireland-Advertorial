@@ -1,0 +1,10 @@
+/// Common: Animate ...
+
+$use-fade: true;
+$use-zoom: true;
+
+@import "~animate-sass/animate";
+
+.pre-animated {
+  opacity: 0;
+}

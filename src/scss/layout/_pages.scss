@@ -1,0 +1,338 @@
+/// Layout: Footer ...
+
+#catalyst-ida-2020-q3-hub {
+  overflow: hidden;
+  scroll-behavior: smooth;
+
+  *,
+  *:after,
+  *:before {
+    box-sizing: border-box;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-style: normal;
+    line-height: 100%;
+    @extend .ftype-proxima-bold;
+    @extend .fsmoothing;
+    color: $black;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+  }
+
+  p {
+    font-style: normal;
+    @extend .ftype-proxima-regular;
+    @extend .fsize-copy-sm;
+    line-height: propH(26, 18);
+    @extend .fsmoothing;
+    color: $black;
+    padding: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    @extend .margin-bottom-md;
+
+    a {
+      @extend .ftype-proxima-bold;
+      color: $green;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .catalyst-campaign {
+    // Header
+    &__header {
+      overflow: hidden;
+      position: relative;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      @extend .padding-left-lg;
+      @extend .padding-right-lg;
+      @extend .margin-bottom-xxlg;
+
+      &__wrapper {
+        position: relative;
+        max-width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      &__heading {
+        position: relative;
+        z-index: 3;
+        padding: $margin-lg 0 240px;
+
+        @media screen and (min-width: $mobile) {
+          padding: $margin-xlg $margin-md 240px;
+        }
+
+        @media screen and (min-width: $tablet) {
+          padding: $margin-ms $margin-lg;
+        }
+
+        @media screen and (min-width: $laptop) {
+          padding: $margin-xms $margin-xlg;
+        }
+
+        &__title {
+          display: block !important;
+          color: $grey;
+          @extend .ftype-proxima-extrabold;
+          @extend .fsize-heading-xlg;
+          line-height: 95%;
+          @extend .margin-bottom-xs;
+        }
+
+        &__tagline {
+          color: $grey;
+          @extend .fsmoothing;
+          @extend .ftype-proxima-semibold;
+          @extend .fsize-heading-sm;
+          line-height: 100%;
+          padding-bottom: 5px;
+        }
+
+        &__line {
+          background-color: $green;
+          width: 120px;
+          height: 6px;
+          @extend .margin-top-sm;
+
+          @media screen and (min-width: $mobile) {
+            width: 160px;
+            height: 8px;
+          }
+
+          @media screen and (min-width: $tablet) {
+            width: 200px;
+            height: 10px;
+          }
+        }
+      }
+
+      &__hexagon {
+        position: absolute;
+        z-index: 2;
+        top: -160px;
+        bottom: 140px;
+        left: -80px;
+
+        @media screen and (min-width: $mobile) {
+          top: -160px;
+          bottom: 120px;
+          left: -60px;
+        }
+
+        @media screen and (min-width: $tablet) {
+          top: -$margin-lg;
+          bottom: -$margin-lg;
+          left: 0;
+        }
+
+        img {
+          display: block;
+          width: auto;
+          height: 100%;
+        }
+      }
+
+      &__hexagon2 {
+        position: absolute;
+        z-index: 2;
+        bottom: -160px;
+        right: -80px;
+
+        @media screen and (min-width: $mobile) {
+          bottom: -140px;
+          right: -60px;
+        }
+
+        @media screen and (min-width: $tablet) {
+          top: -750px;
+          right: -900px;
+          bottom: auto;
+        }
+
+        @media screen and (min-width: $laptop) {
+          right: -800px;
+        }
+
+        @media screen and (min-width: $laptop-lg) {
+          right: -640px;
+        }
+
+        @media screen and (min-width: $desktop-lg) {
+          right: -540px;
+        }
+
+        img {
+          display: block;
+          width: auto;
+          height: 360px;
+
+          @media screen and (min-width: $tablet) {
+            height: 1360px;
+          }
+        }
+      }
+
+      &__logo {
+        position: absolute;
+        z-index: 3;
+        top: auto;
+        bottom: $margin-sm;
+        right: $margin-sm;
+
+        @media screen and (min-width: $mobile) {
+          right: $margin-md;
+          bottom: $margin-md;
+        }
+
+        @media screen and (min-width: $tablet) {
+          right: $margin-lg;
+          top: 50%;
+          bottom: auto;
+          margin-top: -40px;
+        }
+
+        @media screen and (min-width: $laptop) {
+          margin-top: -50px;
+        }
+
+        @media screen and (min-width: $laptop-lg) {
+          margin-top: -60px;
+        }
+
+        img {
+          display: block;
+          width: auto;
+          height: 80px;
+
+          @media screen and (min-width: $laptop) {
+            height: 100px;
+          }
+
+          @media screen and (min-width: $laptop-lg) {
+            height: 120px;
+          }
+        }
+      }
+    }
+
+    // Section
+    &__section {
+      //
+    }
+
+    // Footer
+    &__footer {
+      &__wrapper {
+        @extend .padding-left-lg;
+        @extend .padding-right-lg;
+        max-width: 1040px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      &__grid {
+        &__row {
+          @extend .clearfix;
+
+          @media screen and (min-width: $tablet) {
+            margin-left: -$margin-sm;
+            margin-right: -$margin-sm;
+          }
+
+          &__col {
+            @extend .margin-bottom-xlg;
+
+            @media screen and (min-width: $tablet) {
+              padding-left: $margin-sm;
+              padding-right: $margin-sm;
+              float: left;
+              width: 50%;
+            }
+          }
+        }
+      }
+
+      &__heading {
+        &__title {
+          color: $grey;
+          @extend .ftype-proxima-extrabold;
+          @extend .fsize-heading-lg;
+          line-height: propH(51, 55);
+        }
+
+        &__line {
+          background-color: $green;
+          width: 120px;
+          height: 6px;
+          @extend .margin-top-sm;
+
+          @media screen and (min-width: $mobile) {
+            width: 160px;
+            height: 8px;
+          }
+
+          @media screen and (min-width: $tablet) {
+            width: 200px;
+            height: 10px;
+          }
+        }
+
+        &__share {
+          @extend .margin-top-sm;
+        }
+      }
+
+      &__cta {
+        p {
+          @extend .ftype-proxima-bold;
+          letter-spacing: -0.025em;
+        }
+
+        a {
+          display: block;
+          background-color: $green;
+          color: $white;
+          text-decoration: none;
+          transition: background-color $speed-xs ease;
+          @extend .ftype-proxima-bold;
+          @extend .fsize-copy-sm;
+          line-height: 24px;
+          @extend .fsmoothing;
+          padding: $margin-xxs;
+          text-align: center;
+          letter-spacing: -0.025em;
+          user-select: none;
+
+          @media screen and (min-width: $mobile) {
+            max-width: 320px;
+          }
+
+          &:hover {
+            background-color: darken($green, 8%);
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  #section-01 {
+    @extend .margin-bottom-xxlg;
+  }
+}

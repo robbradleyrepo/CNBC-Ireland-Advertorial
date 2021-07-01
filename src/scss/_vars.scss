@@ -1,0 +1,75 @@
+/// SASS: Vars ...
+
+// Colors
+$black: #000;
+$white: #fff;
+$grey: #3c4037;
+$bg-grey: #e1e1e1;
+$green: #24812a;
+
+// Margins
+$margin-xxs: 10px;
+$margin-xs: 15px;
+$margin-sm: 20px;
+$margin-md: 30px;
+$margin-lg: 40px;
+$margin-xlg: 60px;
+$margin-xxlg: 80px;
+$margin-ms: 120px;
+$margin-xms: 160px;
+$margin-xxms: 200px;
+
+/// Font size
+
+// Font copy
+$font-copy-xs: 16px;
+$font-copy-sm: 18px;
+$font-copy-md: 20px;
+$font-copy-lg: 22px;
+$font-copy-xlg: 24px;
+
+// Font heading
+$font-heading-xs: 30px;
+$font-heading-sm: 32px;
+$font-heading-md: 47px;
+$font-heading-lg: 55px;
+$font-heading-xlg: 59px;
+
+// Font families
+$proxima-light: "Proxima Nova Light", sans-serif;
+$proxima-regular: "Proxima Nova Regular", sans-serif;
+$proxima-semibold: "Proxima Nova Semi Bold", sans-serif;
+$proxima-bold: "Proxima Nova Bold", sans-serif;
+$proxima-extrabold: "Proxima Nova Extrabold", sans-serif;
+
+/// Breakpoints
+
+// Mobile
+$mobile-sm: 360px;
+$mobile: 480px;
+$mobile-lg: 600px;
+
+// Tablet
+$tablet: 768px;
+$tablet-lg: 800px;
+
+// Laptop
+$laptop: 992px;
+$laptop-lg: 1200px;
+
+// Desktop
+$desktop: 1360px;
+$desktop-lg: 1440px;
+$desktop-xlg: 1600px;
+$desktop-xxlg: 1920px;
+
+// Speed
+$speed-xxs: 0.0625s;
+$speed-xs: 0.125s;
+$speed-sm: 0.25s;
+$speed-md: 0.375s;
+$speed-lg: 0.5s;
+$speed-xlg: 0.625s;
+$speed-xxlg: 0.75s;
+$speed-ms: 0.875s;
+$speed-xms: 1s;

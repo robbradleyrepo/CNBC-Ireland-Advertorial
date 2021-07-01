@@ -1,0 +1,137 @@
+/// Vendor: Resets ...
+
+// All devices
+#MainContent {
+  .PageBuilder-page {
+    margin-bottom: 0;
+
+    &Row {
+      padding-left: 0;
+      padding-right: 0;
+      max-width: 100%;
+    }
+
+    .Wildcard-wrapper {
+      padding-bottom: 0;
+    }
+  }
+}
+
+// Desktop (legacy)
+.web {
+  #dart_wrapper_topbanner {
+    display: none;
+  }
+
+  #ribbon_spacer {
+    display: none !important;
+  }
+
+  .dart_wrapper > div {
+    margin-bottom: 0;
+  }
+
+  .cnbc-contents {
+    min-width: inherit;
+
+    .cnbc-body {
+      width: 100%;
+    }
+  }
+
+  .cols1 {
+    margin-top: 0;
+
+    .col1 {
+      width: 100% !important;
+      margin-top: 0 !important;
+    }
+
+    .adcom_wrapper {
+      margin-bottom: 0;
+    }
+  }
+
+  .pagehead {
+    display: none;
+  }
+
+  .story {
+    h1 {
+      display: none;
+    }
+
+    #article_deck {
+      display: none;
+    }
+
+    & > .wildcard {
+      margin-bottom: 0;
+    }
+
+    #article_body {
+      display: none;
+    }
+  }
+
+  #social_bar {
+    button.tabbing-button {
+      display: none;
+    }
+  }
+}
+
+// Mobile (legacy)
+.mobile-touch {
+  #cnbc-contents {
+    .adcom_wrapper {
+      margin-bottom: 0;
+    }
+
+    #cnbc-body {
+      padding-top: 0;
+
+      .ribbon_spacer {
+        display: none;
+      }
+
+      .story-top {
+        display: none;
+      }
+
+      & > article {
+        margin: 0;
+        padding: 0;
+
+        #article_body {
+          display: none;
+        }
+      }
+    }
+
+    // Share icons
+    #social_bar {
+      width: 100% !important;
+    }
+  }
+}
+
+.web,
+.mobile-touch {
+  td#social_bar-reaction0-icon,
+  td#social_bar-reaction1-icon,
+  td#social_bar-reaction2-icon,
+  td#social_bar-reaction3-icon,
+  td#social_bar-reaction4-icon {
+    background: $green !important;
+  }
+
+  .gig-button-container table td:nth-child(2):before {
+    font-size: 22px;
+  }
+
+  .gig-button-container table tr td,
+  .gig-button-container table tr th {
+    color: $white !important;
+  }
+}

@@ -1,0 +1,959 @@
+/// Layout: Components ...
+
+#catalyst-ida-2020-q3-hub {
+  .component-copy,
+  .component-image,
+  .component-video {
+    @extend .padding-left-lg;
+    @extend .padding-right-lg;
+    @extend .margin-bottom-xlg;
+
+    .component__content {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .component-hero {
+    @extend .margin-bottom-xxlg;
+
+    .component__content {
+      &__line {
+        background-color: $green;
+        width: 120px;
+        height: 6px;
+        @extend .margin-top-sm;
+
+        @media screen and (min-width: $mobile) {
+          width: 160px;
+          height: 8px;
+        }
+
+        @media screen and (min-width: $tablet) {
+          width: 200px;
+          height: 10px;
+        }
+      }
+    }
+  }
+
+  // Copy
+  .component-copy {
+    .component__content {
+      max-width: 560px;
+
+      p {
+        letter-spacing: -0.025em;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .fletter {
+          @extend .ftype-proxima-bold;
+          color: $green;
+          float: left;
+          line-height: 80%;
+          font-size: 500%;
+          margin-right: $margin-xxs;
+        }
+      }
+
+      &__intro {
+        @extend .margin-bottom-md;
+
+        p {
+          color: $grey;
+          @extend .ftype-proxima-bold;
+          @extend .fsize-copy-md;
+        }
+      }
+    }
+  }
+
+  // Image
+  .component-image {
+    .component__content {
+      max-width: 1140px;
+
+      img {
+        background-color: $bg-grey;
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  // Video
+  .component-video {
+    .component__content {
+      max-width: 1140px;
+
+      &__title {
+        color: $grey;
+        @extend .ftype-proxima-bold;
+        @extend .fsize-copy-lg;
+        @extend .margin-bottom-md;
+        text-transform: none;
+      }
+
+      &__inner {
+        background-color: $bg-grey;
+        padding-bottom: 56.25%;
+        height: 0;
+        position: relative;
+        overflow: hidden;
+
+        iframe,
+        object,
+        embed {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+
+  // Share
+  .component-share {
+    @extend .padding-left-lg;
+    @extend .padding-right-lg;
+    @extend .margin-bottom-xlg;
+
+    @media screen and (min-width: 1560px) {
+      margin-bottom: 0;
+    }
+
+    .component__wrapper {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 560px;
+
+      @media screen and (min-width: 1560px) {
+        max-width: 1560px;
+      }
+    }
+
+    .component__content {
+      @media screen and (min-width: 1560px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
+
+      &__heading {
+        &__title {
+          color: $grey;
+          @extend .ftype-proxima-bold;
+          @extend .fsize-heading-md;
+          line-height: 100%;
+        }
+
+        &__line {
+          background-color: $green;
+          width: 120px;
+          height: 6px;
+          @extend .margin-top-sm;
+
+          @media screen and (min-width: $mobile) {
+            width: 160px;
+            height: 8px;
+          }
+
+          @media screen and (min-width: $tablet) {
+            width: 200px;
+            height: 10px;
+          }
+        }
+      }
+
+      &__share {
+        @extend .margin-top-sm;
+      }
+    }
+  }
+
+  // Hero
+  .component-hero {
+    background-position: -272px 50%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    @extend .padding-left-lg;
+    @extend .padding-right-lg;
+    @extend .margin-bottom-xlg;
+
+    @media screen and (min-width: $mobile-sm) {
+      background-position: -264px 50%;
+    }
+
+    @media screen and (min-width: $mobile) {
+      background-position: -296px 50%;
+    }
+
+    @media screen and (min-width: $tablet) {
+      background-position: -332px 50%;
+    }
+
+    @media screen and (min-width: $laptop-lg) {
+      background-position: 50% 50%;
+    }
+
+    .component__inner {
+      display: table;
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 1080px;
+      margin-left: auto;
+      margin-right: auto;
+      height: 360px;
+
+      @media screen and (min-width: $mobile) {
+        height: 420px;
+      }
+
+      @media screen and (min-width: $tablet) {
+        height: 480px;
+      }
+
+      @media screen and (min-width: $laptop-lg) {
+        height: 540px;
+      }
+    }
+
+    .component__content {
+      display: table-cell;
+      vertical-align: middle;
+
+      &__inner {
+        padding: $margin-md;
+
+        @media screen and (min-width: $mobile) {
+          padding: $margin-lg;
+        }
+
+        @media screen and (min-width: $tablet) {
+          padding: $margin-xlg;
+        }
+
+        @media screen and (min-width: $laptop) {
+          padding: $margin-xxlg;
+        }
+      }
+
+      &__title {
+        color: $white;
+        @extend .fsize-heading-md;
+      }
+
+      &__copy {
+        @extend .margin-top-sm;
+        max-width: 260px;
+
+        @media screen and (min-width: $mobile) {
+          max-width: 280px;
+        }
+
+        @media screen and (min-width: $tablet) {
+          max-width: 300px;
+        }
+
+        @media screen and (min-width: $laptop) {
+          max-width: 320px;
+        }
+
+        p {
+          color: $white;
+          @extend .ftype-proxima-semibold;
+          @extend .fsize-copy-md;
+          line-height: 120%;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  // Series
+  .component-series {
+    overflow: hidden;
+    position: relative;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @extend .padding-left-lg;
+    @extend .padding-right-lg;
+    @extend .margin-bottom-xlg;
+    min-height: 360px;
+
+    @media screen and (min-width: $mobile) {
+      min-height: 420px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      min-height: 480px;
+    }
+
+    @media screen and (min-width: $laptop-lg) {
+      min-height: 540px;
+    }
+
+    .component__hexagon {
+      position: absolute;
+      z-index: 2;
+      top: -160px;
+      bottom: 140px;
+      left: -80px;
+
+      @media screen and (min-width: $mobile) {
+        top: -160px;
+        bottom: 120px;
+        left: -60px;
+      }
+
+      @media screen and (min-width: $tablet) {
+        top: -$margin-lg;
+        bottom: -$margin-lg;
+        left: 0;
+      }
+
+      img {
+        display: block;
+        width: auto;
+        height: 100%;
+      }
+    }
+
+    .component__hexagon2 {
+      position: absolute;
+      z-index: 2;
+      bottom: -160px;
+      right: -80px;
+
+      @media screen and (min-width: $mobile) {
+        bottom: -140px;
+        right: -60px;
+      }
+
+      @media screen and (min-width: $tablet) {
+        top: -750px;
+        right: -900px;
+        bottom: auto;
+      }
+
+      @media screen and (min-width: $laptop) {
+        right: -800px;
+      }
+
+      @media screen and (min-width: $laptop-lg) {
+        right: -640px;
+      }
+
+      @media screen and (min-width: $desktop-lg) {
+        right: -540px;
+      }
+
+      img {
+        display: block;
+        width: auto;
+        height: 360px;
+
+        @media screen and (min-width: $tablet) {
+          height: 1360px;
+        }
+      }
+    }
+
+    .component__logo {
+      position: absolute;
+      z-index: 3;
+      top: auto;
+      bottom: $margin-sm;
+      right: $margin-sm;
+
+      @media screen and (min-width: $mobile) {
+        right: $margin-md;
+        bottom: $margin-md;
+      }
+
+      @media screen and (min-width: $tablet) {
+        right: $margin-lg;
+        top: 50%;
+        bottom: auto;
+        margin-top: -40px;
+      }
+
+      @media screen and (min-width: $laptop) {
+        margin-top: -50px;
+      }
+
+      @media screen and (min-width: $laptop-lg) {
+        margin-top: -60px;
+      }
+
+      img {
+        display: block;
+        width: auto;
+        height: 80px;
+
+        @media screen and (min-width: $laptop) {
+          height: 100px;
+        }
+
+        @media screen and (min-width: $laptop-lg) {
+          height: 120px;
+        }
+      }
+    }
+  }
+
+  // Shows + Interviews + News
+  .component-shows,
+  .component-interviews,
+  .component-news {
+    @extend .padding-left-lg;
+    @extend .padding-right-lg;
+    @extend .margin-bottom-sm;
+
+    .component__wrapper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .component__grid {
+      @extend .clearfix;
+    }
+  }
+
+  // Shows + Interviews
+  .component-shows,
+  .component-news {
+    .component__wrapper {
+      max-width: 1560px;
+    }
+
+    .component__grid {
+      @media screen and (min-width: $mobile) {
+        margin-left: -$margin-xxs;
+        margin-right: -$margin-xxs;
+      }
+
+      @media screen and (min-width: $laptop) {
+        margin-left: -$margin-xs;
+        margin-right: -$margin-xs;
+      }
+
+      @media screen and (min-width: $desktop) {
+        margin-left: -$margin-sm;
+        margin-right: -$margin-sm;
+      }
+
+      &__item {
+        @media screen and (min-width: $mobile) {
+          padding-left: $margin-xxs;
+          padding-right: $margin-xxs;
+          float: left;
+          width: propH(1, 2);
+        }
+
+        @media screen and (min-width: $laptop) {
+          padding-left: $margin-xs;
+          padding-right: $margin-xs;
+          width: propH(1, 3);
+        }
+
+        @media screen and (min-width: $desktop) {
+          padding-left: $margin-sm;
+          padding-right: $margin-sm;
+        }
+      }
+    }
+  }
+
+  // Shows
+  .component-shows {
+    a {
+      text-decoration: none;
+    }
+    h3 {
+      color: #000;
+    }
+    .component__grid {
+      &__item {
+        &.grid-item-2,
+        &.gri d-item-4 {
+          @media screen and (min-width: $mobile) {
+            clear: both;
+          }
+
+          @media screen and (min-width: $laptop) {
+            clear: none;
+          }
+        }
+
+        &.grid-item-3 {
+          @media screen and (min-width: $laptop) {
+            clear: both;
+            margin-left: propH(1, 6);
+          }
+        }
+
+        &.grid-item-4 {
+          @media screen and (min-width: $mobile) {
+            margin-left: 25%;
+          }
+
+          @media screen and (min-width: $laptop) {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  // Interviews
+  .component-interviews {
+    .component__wrapper {
+      max-width: 1140px;
+      padding-bottom: 1rem;
+
+      @media screen and (min-width: $tablet) {
+        padding-bottom: 0;
+      }
+    }
+
+    .component__grid {
+      margin-left: -$margin-xxs;
+      margin-right: -$margin-xxs;
+
+      @media screen and (min-width: $tablet) {
+        margin-left: -$margin-xs;
+        margin-right: -$margin-xs;
+      }
+
+      @media screen and (min-width: $desktop) {
+        margin-left: -$margin-sm;
+        margin-right: -$margin-sm;
+      }
+
+      &__item {
+        vertical-align: top;
+        padding-left: $margin-xxs;
+        padding-right: $margin-xxs;
+        outline: none;
+
+        @media screen and (min-width: $tablet) {
+          padding-left: $margin-xs;
+          padding-right: $margin-xs;
+        }
+
+        @media screen and (min-width: $desktop) {
+          padding-left: $margin-sm;
+          padding-right: $margin-sm;
+        }
+      }
+    }
+
+    .slick-slider {
+
+      .slick-slide {
+        height: auto;
+      }
+
+      .slick-arrow {
+        display: none;
+      }
+
+      ul.slick-dots {
+        bottom: -0.5rem;
+        line-height: 100%;
+        margin: 0;
+        padding: 0;
+
+        li {
+          button:before {
+            font-size: 8px;
+          }
+        }
+
+      }
+    }
+  }
+
+  // News
+  .component-news {
+    .component__grid {
+      &__item {
+        &.grid-item-2,
+        &.grid-item-4,
+        &.grid-item-6,
+        &.grid-item-8,
+        &.grid-item-10,
+        &.grid-item-12 {
+          @media screen and (min-width: $mobile) {
+            clear: both;
+          }
+
+          @media screen and (min-width: $laptop) {
+            clear: none;
+          }
+        }
+
+        &.grid-item-3,
+        &.grid-item-6,
+        &.grid-item-9,
+        &.grid-item-12 {
+          @media screen and (min-width: $laptop) {
+            clear: both;
+          }
+        }
+      }
+    }
+  }
+
+  // Show + Interview + Article
+  .component-show,
+  .component-interview,
+  .component-article {
+    @extend .margin-bottom-xlg;
+
+    .component__thumb {
+      position: relative;
+      background-color: $bg-grey;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      @extend .margin-bottom-sm;
+      transition: opacity $speed-sm ease;
+
+      &.thumb-inactive {
+        opacity: 0.7 !important;
+        cursor: auto;
+      }
+    }
+  }
+
+  // Show + Article
+  .component-show,
+  .component-article {
+    .component__thumb {
+      padding-bottom: propH(320, 480);
+    }
+
+    .component__heading {
+      &__title {
+        letter-spacing: -0.02em;
+        @extend .fsize-copy-lg;
+        line-height: propH(26, 22);
+        text-transform: none;
+      }
+    }
+  }
+
+  // Show + Interview + Article
+  .component-show,
+  .component-interview,
+  .component-article {
+    &:hover {
+      .component__thumb {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  // Show
+  .component-show {
+
+    .component__link {
+      display: block;
+      text-decoration: none;
+
+      &:hover {
+        .component__thumb__icon {
+          ion-icon {
+            transform: scale3d(1.15, 1.15, 1);
+          }
+        }
+      }
+    }
+
+    .component__thumb {
+      &__icon {
+        position: absolute;
+        z-index: 2;
+        width: $margin-xlg;
+        height: $margin-xlg;
+        top: 50%;
+        left: 50%;
+        margin-top: -$margin-md;
+        margin-left: -$margin-md;
+        border-radius: 50%;
+        text-align: center;
+        background-color: rgba($black, 0.5);
+        text-align: center;
+
+        ion-icon {
+          font-size: $margin-md;
+          color: $white;
+          transform: scale3d(1, 1, 1);
+          transition: transform 0.25s ease;
+          padding: $margin-xs;
+          margin-right: -1px;
+        }
+      }
+    }
+
+    .component__heading {
+      &__date {
+        @extend .ftype-proxima-regular;
+        @extend .fsize-copy-xs;
+        line-height: propH(20, 16);
+        @extend .margin-top-xxs;
+        color: $grey;
+        @extend .fsmoothing;
+      }
+
+      &__button {
+        @extend .margin-top-sm;
+        display: inline-block;
+        vertical-align: middle;
+        background-color: $green;
+        color: $white;
+        padding: $margin-xxs $margin-md;
+        @extend .ftype-proxima-bold;
+        @extend .fsize-copy-sm;
+        line-height: 24px;
+        @extend .fsmoothing;
+        text-decoration: none;
+        transition: background-color $speed-sm ease;
+
+        @media screen and (min-width: $mobile) {
+          padding-left: $margin-lg;
+          padding-right: $margin-lg;
+        }
+
+        &:hover {
+          background-color: darken($green, 5%);
+        }
+      }
+    }
+  }
+
+  // Interview
+  .component-interview {
+    text-align: center;
+
+    .component__link {
+      display: block;
+      text-decoration: none;
+
+      &:hover {
+        .component__thumb__icon {
+          ion-icon {
+            transform: scale3d(1.15, 1.15, 1);
+          }
+        }
+      }
+    }
+
+    .component__thumb {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
+
+      @media screen and (min-width: $mobile) {
+        width: 160px;
+        height: 160px;
+      }
+
+      @media screen and (min-width: $tablet) {
+        width: 200px;
+        height: 200px;
+      }
+
+      @media screen and (min-width: $laptop) {
+        width: 240px;
+        height: 240px;
+      }
+
+      @media screen and (min-width: $desktop) {
+        width: 280px;
+        height: 280px;
+      }
+
+      &.thumb-inactive {
+        .component__thumb__icon {
+          display: none;
+        }
+      }
+
+      &__icon {
+        position: absolute;
+        z-index: 2;
+        width: $margin-xlg;
+        height: $margin-xlg;
+        top: 50%;
+        left: 50%;
+        margin-top: -$margin-md;
+        margin-left: -$margin-md;
+        border-radius: 50%;
+        text-align: center;
+        background-color: rgba($black, 0.5);
+        text-align: center;
+
+        ion-icon {
+          font-size: $margin-md;
+          color: $white;
+          transform: scale3d(1, 1, 1);
+          transition: transform 0.25s ease;
+          padding: $margin-xs;
+          margin-right: -1px;
+        }
+      }
+    }
+
+    .component__heading {
+      &__title {
+        letter-spacing: -0.02em;
+        @extend .fsize-copy-md;
+        line-height: propH(24, 20);
+        text-transform: none;
+      }
+
+      &__date {
+        @extend .ftype-proxima-regular;
+        @extend .fsize-copy-xs;
+        line-height: propH(20, 16);
+        @extend .margin-top-xxs;
+        color: $grey;
+        @extend .fsmoothing;
+      }
+
+      &__button {
+        @extend .margin-top-sm;
+        display: inline-block;
+        vertical-align: middle;
+        background-color: $green;
+        color: $white;
+        padding: $margin-xxs $margin-md;
+        @extend .ftype-proxima-bold;
+        @extend .fsize-copy-sm;
+        line-height: 24px;
+        @extend .fsmoothing;
+        text-decoration: none;
+        transition: background-color $speed-sm ease;
+
+        @media screen and (min-width: $mobile) {
+          padding-left: $margin-lg;
+          padding-right: $margin-lg;
+        }
+
+        &:hover {
+          background-color: darken($green, 5%);
+        }
+      }
+    }
+  }
+
+  // Article
+  .component-article {
+    .component__link {
+      display: block;
+      text-decoration: none;
+    }
+
+    .component__thumb {
+      border: 1px solid $green;
+    }
+  }
+
+  // Overlay video
+  .component-overlay-video {
+    .component__overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 10;
+      background-color: rgba($black, 0.6);
+      @extend .padding-left-xlg;
+      @extend .padding-right-xlg;
+    }
+
+    .component__wrapper {
+      display: table;
+      width: 100%;
+      height: 100%;
+      min-height: 100vh;
+      border-collapse: collapse;
+
+      &__inner {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+
+    .component__content {
+      position: relative;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+
+      &__inner {
+        background-color: $black;
+        padding-bottom: 56.25%;
+        height: 0;
+        position: relative;
+        overflow: hidden;
+
+        iframe,
+        object,
+        embed {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+      }
+
+      &__close {
+        position: absolute;
+        z-index: 11;
+        color: $white;
+        line-height: 100%;
+        top: -24px;
+        right: -24px;
+        font-size: 32px;
+        width: 48px;
+        height: 48px;
+        border-radius: 24px;
+        background-color: $black;
+        display: block;
+        text-align: center;
+        padding: 8px;
+        transition: background-color $speed-sm ease;
+
+        &:hover {
+          background-color: lighten($black, 15%);
+        }
+
+        ion-icon {
+          display: inline-block;
+          vertical-align: middle;
+          line-height: 48px;
+        }
+      }
+    }
+  }
+}
