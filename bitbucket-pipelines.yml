@@ -1,0 +1,40 @@
+# This is a sample build configuration for JavaScript.
+# Check our guides at https://confluence.atlassian.com/x/14UWN for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: cnbccatalyst/test-lighthouse-cypress:latest
+pipelines:
+  default:
+    - step:
+        script:
+          - npm install
+          - npm run lint
+          - npm run test
+  branches:
+    master:
+      - step:
+          caches:
+            - node
+          script:
+            - npm install
+            - npm run lint
+            - export JEST_JUNIT_OUTPUT_DIR="./test-reports" && npm run test:ci
+            - npm run build:dist -- --env.enviroment=prod
+            - npm run build:ssr -- --env.enviroment=prod
+            - npm run build:cnbc -- prod
+            - npm run deploy:aws -- prod
+            - npm run test:performance -- prod
+    develop:
+      - step:
+          caches:
+            - node
+          script:
+            - npm install
+            - npm run lint
+            - export JEST_JUNIT_OUTPUT_DIR="./test-reports" && npm run test:ci
+            - npm run build:dist -- --env.enviroment=stage
+            - npm run build:ssr -- --env.enviroment=stage
+            - npm run build:demo
+            - npm run deploy:aws -- stage
+            - npm run test:performance -- stage

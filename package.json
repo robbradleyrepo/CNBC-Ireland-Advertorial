@@ -1,0 +1,91 @@
+{
+  "name": "ida-2020-q3-hub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "~12.x"
+  },
+  "scripts": {
+    "test": "node scripts/cnbc.js && jest",
+    "test:ci": "node scripts/cnbc.js && jest  --reporters='jest-junit' ",
+    "test:performance": "node scripts/cnbc.js && node scripts/lighthouse.js",
+    "build": "node scripts/cnbc.js && npm run build:dist -- --env.enviroment=prod && npm run build:ssr -- --env.enviroment=prod && npm run build:cnbc -- prod",
+    "build:dist": "webpack --mode production --config config/webpack.config.js",
+    "build:ssr": "webpack --mode development --config config/webpack.config.ssr.js ",
+    "build:cnbc": "node scripts/build.js",
+    "lint": "node scripts/cnbc.js && eslint 'src/**/*.js'",
+    "build:demo": "node scripts/build-demo.js",
+    "open": "node scripts/cnbc.js && node scripts/open.js",
+    "deploy:aws": "node scripts/cnbc.js &&  node scripts/deploy-aws.js",
+    "clear:aws": "node scripts/cnbc.js &&  node scripts/clear-aws.js",
+    "start": "node scripts/cnbc.js && webpack-dev-server --open --mode development --config config/webpack.config.dev.js",
+    "postinstall": "npm rebuild node-sass"
+  },
+  "cnbc": {
+    "projectName": "ida-2020-q3-hub",
+    "root": "advertorial",
+    "env": {
+      "stage": {
+        "aws_bucket": "cnbc-uk-catalyst-studio-demos",
+        "aws_region": "us-west-2",
+        "aws_root": "https://advertorials-stage.cnbc.com/advertorial",
+        "aws_distribution": "E28G042ML0ISVL"
+      },
+      "prod": {
+        "aws_bucket": "cnbc-uk-catalyst",
+        "aws_region": "us-east-1",
+        "aws_root": "https://advertorials.cnbc.com/advertorial",
+        "aws_distribution": "E2ZFOLZ46POWA8"
+      }
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animate-sass": "^0.8.2",
+    "axios": "^0.20.0",
+    "gsap": "^3.3.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-slick": "^0.27.11",
+    "styled-components": "^5.1.1"
+  },
+  "devDependencies": {
+    "@actions/core": "^1.2.5",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "@testing-library/react": "^10.2.1",
+    "@testing-library/react-hooks": "^3.3.0",
+    "autoprefixer": "^9.8.0",
+    "aws-sdk": "^2.691.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-jest": "^23.13.2",
+    "eslint-plugin-react": "^7.20.0",
+    "ftp": "^0.3.10",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^25.5.4",
+    "jest-junit": "^10.0.0",
+    "jsdom": "^16.2.2",
+    "junit-xml": "^1.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "openurl": "^1.1.1",
+    "postcss-loader": "^3.0.0",
+    "react-test-renderer": "^16.13.1",
+    "sass-loader": "^8.0.2",
+    "string-replace-loader": "^2.3.0",
+    "style-loader": "^1.2.1",
+    "svg-inline-loader": "^0.8.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
